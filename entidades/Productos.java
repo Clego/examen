@@ -23,6 +23,11 @@ public class Productos {
         this.unidades = unidades;
         this.fechaCreacion = fechaCreacion;
     }
+    public Productos Productos(int referencia, byte unidades, String fechaCreacion) {
+        this.referencia = referencia;
+        this.unidades = unidades;
+        this.fechaCreacion = fechaCreacion;
+    }
 
     public UUID getUuid() {
         return uuid;
