@@ -53,4 +53,25 @@ public class Main {
             System.out.println(Productos);
         }
     }
+
+    public static void modificar() {
+        System.out.println("Introduce la referencia del producto");
+        int producto = Input.pedirNumero();
+        Iterator<Productos> iterator = new Iterator<Productos>();
+        while (iterator = hastNext()) {
+            if (iterator.hasNext() == producto) {
+                System.out.println("Cuantas unidades quieres comprar?");
+                int comprar = Input.pedirNumero();
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+
 }
