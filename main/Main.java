@@ -9,6 +9,7 @@ public class Main {
     final static int ALTA = 1;
     int opcion;
     static List<Productos> productos = new ArrayList<>();
+
     public static void main(String[] args) {
 
         System.out.println("""
@@ -33,5 +34,15 @@ public class Main {
         productos.add(productos(referencia, unidades, fechaCreacion));
     }
 
+    public static void vender() {
+        System.out.println("Que producto quieres comprar?");
+        System.out.println(productos);
+        System.out.println("Introduce la referencia del producto que quieres");
+        int referencia = Input.pedirNumero();
+        System.out.println("Cuantas unidades quieres?");
+        int cantidad = Input.pedirNumero();
+        Productos.setFechaModificacion(25 / 01 / 2025);
 
+
+    }
 }
