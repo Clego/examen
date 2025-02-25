@@ -14,8 +14,4 @@ public class Input {
         return recibido;
     }
 
-    public static byte pedirNumeroB() {
-        byte    recibido = sc.nextByte();
-        return recibido;
-    }
 }
