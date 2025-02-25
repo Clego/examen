@@ -1,6 +1,7 @@
 package main;
-
+import entidades.Productos;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
 import input.Input;
@@ -22,7 +23,6 @@ public class Main {
         }
     }
 
-
     public static void alta() {
         System.out.println("Introduce la referencia (7 caracteres maximo)");
         int referencia = Input.pedirNumero();
@@ -33,4 +33,44 @@ public class Main {
 
         productos.add(productos(referencia, unidades, fechaCreacion));
     }
+
+    public static void vender() {
+        System.out.println("Que producto quieres comprar?");
+        System.out.println(productos);
+        System.out.println("Introduce la referencia del producto que quieres");
+        int referencia = Input.pedirNumero();
+        System.out.println("Cuantas unidades quieres?");
+        int cantidad = Input.pedirNumero();
+        Productos.setFechaModificacion(25 / 01 / 2025);
+    }
+
+    public static void listar() {
+
+        Iterator<Productos> iterator = new Iterator<Productos>()
+        while (iterator.hasNext()) {
+            iterator = hastNext();
+            System.out.println(Productos);
+        }
+    }
+
+    public static void modificar() {
+        System.out.println("Introduce la referencia del producto");
+        int producto = Input.pedirNumero();
+        Iterator<Productos> iterator = new Iterator<Productos>();
+        while (iterator = hastNext()) {
+            if (iterator.hasNext() == producto) {
+                System.out.println("Cuantas unidades quieres comprar?");
+                int comprar = Input.pedirNumero();
+            }
+
+
+        }
+
+
+
+
+
+    }
+
+
 }
