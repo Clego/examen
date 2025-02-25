@@ -68,4 +68,15 @@ public class Productos {
     public void setFechaModificacion(String fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
     }
+
+    @Override
+    public String toString() {
+        return "Productos{" +
+                "uuid=" + uuid +
+                ", referencia='" + referencia + '\'' +
+                ", unidades=" + unidades +
+                ", fechaCreacion='" + fechaCreacion + '\'' +
+                ", fechaModificacion='" + fechaModificacion + '\'' +
+                '}';
+    }
 }
