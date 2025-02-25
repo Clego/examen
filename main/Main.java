@@ -8,7 +8,7 @@ import input.Input;
 public class Main {
     final static int ALTA = 1;
     int opcion;
-    List<Productos> productos = new ArrayList<>();
+    static List<Productos> productos = new ArrayList<>();
     public static void main(String[] args) {
 
         System.out.println("""
