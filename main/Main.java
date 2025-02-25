@@ -1,6 +1,7 @@
 package main;
 import entidades.Productos;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
 import input.Input;
@@ -42,7 +43,14 @@ public class Main {
         System.out.println("Cuantas unidades quieres?");
         int cantidad = Input.pedirNumero();
         Productos.setFechaModificacion(25 / 01 / 2025);
+    }
 
+    public static void listar() {
 
+        Iterator<Productos> iterator = new Iterator<Productos>()
+        while (iterator.hasNext()) {
+            iterator = hastNext();
+            System.out.println(Productos);
+        }
     }
 }
